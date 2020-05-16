@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tabula", "Tabula.csproj", "{658FFE30-6E69-4C66-BC5F-46E359204B84}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TabulaTest", "TabulaTest\TabulaTest.csproj", "{D8E7C0DA-F31A-418F-A58D-38B0AC6A883E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{658FFE30-6E69-4C66-BC5F-46E359204B84}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{658FFE30-6E69-4C66-BC5F-46E359204B84}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{658FFE30-6E69-4C66-BC5F-46E359204B84}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{658FFE30-6E69-4C66-BC5F-46E359204B84}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D8E7C0DA-F31A-418F-A58D-38B0AC6A883E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D8E7C0DA-F31A-418F-A58D-38B0AC6A883E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D8E7C0DA-F31A-418F-A58D-38B0AC6A883E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D8E7C0DA-F31A-418F-A58D-38B0AC6A883E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

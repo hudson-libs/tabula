@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+    <PropertyGroup>
+        <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+        <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+        <ProjectGuid>{658FFE30-6E69-4C66-BC5F-46E359204B84}</ProjectGuid>
+        <OutputType>Library</OutputType>
+        <AppDesignerFolder>Properties</AppDesignerFolder>
+        <RootNamespace>Tabula</RootNamespace>
+        <AssemblyName>Tabula</AssemblyName>
+        <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+        <FileAlignment>512</FileAlignment>
+    </PropertyGroup>
+    <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+        <PlatformTarget>AnyCPU</PlatformTarget>
+        <DebugSymbols>true</DebugSymbols>
+        <DebugType>full</DebugType>
+        <Optimize>false</Optimize>
+        <OutputPath>bin\Debug\</OutputPath>
+        <DefineConstants>DEBUG;TRACE</DefineConstants>
+        <ErrorReport>prompt</ErrorReport>
+        <WarningLevel>4</WarningLevel>
+    </PropertyGroup>
+    <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+        <PlatformTarget>AnyCPU</PlatformTarget>
+        <DebugType>pdbonly</DebugType>
+        <Optimize>true</Optimize>
+        <OutputPath>bin\Release\</OutputPath>
+        <DefineConstants>TRACE</DefineConstants>
+        <ErrorReport>prompt</ErrorReport>
+        <WarningLevel>4</WarningLevel>
+    </PropertyGroup>
+    <ItemGroup>
+        <Reference Include="System" />
+        <Reference Include="System.Core" />
+        <Reference Include="System.Data" />
+        <Reference Include="System.Xml" />
+    </ItemGroup>
+    <ItemGroup>
+        <Compile Include="BoyerMyrvold\Graphs\Algorithms\BaseDFSTraversalVisitor.cs" />
+        <Compile Include="BoyerMyrvold\Graphs\Algorithms\DFSTraversal.cs" />
+        <Compile Include="BoyerMyrvold\Graphs\Algorithms\IDFSTraversalVisitor.cs" />
+        <Compile Include="BoyerMyrvold\Graphs\DataStructures\Edge.cs" />
+        <Compile Include="BoyerMyrvold\Graphs\DataStructures\IEdge.cs" />
+        <Compile Include="BoyerMyrvold\Graphs\DataStructures\IGraph.cs" />
+        <Compile Include="BoyerMyrvold\Graphs\DataStructures\UndirectedAdjacencyListGraph.cs" />
+        <Compile Include="BoyerMyrvold\PlanarityTesting\BoyerMyrvold\BoyerMyrvold.cs" />
+        <Compile Include="BoyerMyrvold\PlanarityTesting\BoyerMyrvold\GetPlanarFacesVisitor.cs" />
+        <Compile Include="BoyerMyrvold\PlanarityTesting\BoyerMyrvold\Internal\BucketSort.cs" />
+        <Compile Include="BoyerMyrvold\PlanarityTesting\BoyerMyrvold\Internal\DFSTraversalVisitor.cs" />
+        <Compile Include="BoyerMyrvold\PlanarityTesting\BoyerMyrvold\Internal\FaceHandle.cs" />
+        <Compile Include="BoyerMyrvold\PlanarityTesting\BoyerMyrvold\Internal\LinkedListExtensions.cs" />
+        <Compile Include="BoyerMyrvold\PlanarityTesting\BoyerMyrvold\Internal\Vertex.cs" />
+        <Compile Include="BoyerMyrvold\PlanarityTesting\BoyerMyrvold\PlanarEmbedding.cs" />
+        <Compile Include="BoyerMyrvold\PlanarityTesting\BoyerMyrvold\PlanarFaces.cs" />
+        <Compile Include="BoyerMyrvold\PlanarityTesting\PlanarFaceTraversal\BasePlanarFaceTraversalVisitor.cs" />
+        <Compile Include="BoyerMyrvold\PlanarityTesting\PlanarFaceTraversal\IPlanarFaceTraversalVisitor.cs" />
+        <Compile Include="BoyerMyrvold\PlanarityTesting\PlanarFaceTraversal\PlanarFaceTraversal.cs" />
+        <Compile Include="Graph.cs" />
+        <Compile Include="Node.cs" />
+        <Compile Include="Properties\AssemblyInfo.cs" />
+    </ItemGroup>
+    <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+    <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+         Other similar extension points exist, see Microsoft.Common.targets.
+    <Target Name="BeforeBuild">
+    </Target>
+    <Target Name="AfterBuild">
+    </Target>
+    -->
+
+</Project>
